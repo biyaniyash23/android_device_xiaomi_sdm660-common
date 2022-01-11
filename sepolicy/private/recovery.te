@@ -1,0 +1,39 @@
+allow recovery device:chr_file { getattr };
+
+allow recovery device:dir { add_name  create  write };
+
+allow recovery device:file { create  getattr  write };
+
+allow recovery dm_device:blk_file { ioctl };
+
+allow recovery hwservicemanager_prop:property_service { set };
+
+allow recovery input_device:chr_file { write };
+
+allow recovery linkerconfig_file:dir { getattr };
+
+allow recovery loop_device:blk_file { ioctl };
+
+allow recovery media_rw_data_file:dir { open  read  search };
+
+allow recovery media_rw_data_file:file { getattr  map  open  read  setattr  write };
+
+allow recovery mnt_user_file:dir { getattr };
+
+allow recovery recovery:binder { call  transfer };
+
+allow recovery recovery:capability { fsetid };
+
+allow recovery recovery:capability2 { wake_alarm };
+
+allow recovery recovery:dir { add_name  write };
+
+allow recovery recovery:file { create };
+
+allow recovery recovery:netlink_kobject_uevent_socket { create  setopt };
+
+allow recovery system_data_file:file { ioctl  open  read  setattr  write };
+
+allow recovery system_data_root_file:dir { create  open  read };
+
+allow recovery vendor_file:dir { write };
