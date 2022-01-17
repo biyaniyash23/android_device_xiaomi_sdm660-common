@@ -179,9 +179,12 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
     vendor.display.config@1.1
 
-# Doze
+# XiaomiParts
 PRODUCT_PACKAGES += \
-    XiaomiDoze
+    XiaomiParts
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-xiaomiparts.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-xiaomiparts.xml
 
 # Display Device Config
 PRODUCT_COPY_FILES += \
