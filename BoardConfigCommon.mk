@@ -65,6 +65,9 @@ BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
+# MiuiCamera
+-include vendor/MiuiCamera/BoardConfigAnx.mk
+
 # Display
 BOARD_USES_ADRENO := true
 TARGET_USES_HWC2 := true
