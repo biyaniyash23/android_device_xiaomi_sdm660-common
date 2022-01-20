@@ -1,2 +1,0 @@
-
-allow init ram_device:blk_file { write };
