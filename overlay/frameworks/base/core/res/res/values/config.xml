@@ -298,6 +298,11 @@
     <string-array name="config_deviceDisabledComponents" translatable="false">
         <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
         <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.histo>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.histo>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.Ambie>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.Ambie>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.Ambie>
     </string-array>
 
      <!-- Controls the navigation bar interaction mode:
@@ -384,21 +389,14 @@
 
    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
-    <!-- The list of components which should be automatically disabled for a specific device.
-         Note: this MUST not be used to randomly disable components, ask for approval first! -->
-    <string-array name="config_deviceDisabledComponents" translatable="false">
-        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryContentProvider</item>
-        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryActivity</item>
-        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity</item>
-        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicNotificationsSettingsActivity</item>
-        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSetupWizardActivity</item>
-    </string-array>
-
    <!-- Amount of time in ms the user needs to press the relevant keys to trigger the
          screenshot chord -->
     <integer name="config_screenshotChordKeyTimeout">0</integer>
 
     <!-- Controls whether system buttons use all caps for text -->
     <bool name="config_buttonTextAllCaps">false</bool>
+
+    <!-- Exempt ImsService from privacy (location) indicators -->
+    <string name="config_systemAudioIntelligence" translatable="false">org.codeaurora.ims</string>
 
 </resources>
