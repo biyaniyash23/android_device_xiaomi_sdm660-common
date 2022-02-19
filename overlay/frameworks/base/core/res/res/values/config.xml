@@ -298,11 +298,11 @@
     <string-array name="config_deviceDisabledComponents" translatable="false">
         <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
         <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
-        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.histo>
-        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.histo>
-        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.Ambie>
-        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.Ambie>
-        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.Ambie>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryContentProvider</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryActivity</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicNotificationsSettingsActivity</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSetupWizardActivity</item>
     </string-array>
 
      <!-- Controls the navigation bar interaction mode:
@@ -382,13 +382,14 @@
     <integer name="config_wakeUpDelayDoze">32</integer>
 
  <!-- Smart charge sysfs node and value for suspend/resume charging-->
-    <bool name="config_smartChargingAvailable">true</bool>
     <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
     <string name="config_SmartChargingSupspendValue" translatable="false">1</string>
     <string name="config_SmartChargingResumeValue" translatable="false">0</string>
 
-   <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+    <!-- If this is true, device supports Sustained Performance Mode. -->
+    <bool name="config_sustainedPerformanceModeSupported">true</bool>
 
+<<<<<<< HEAD
    <!-- Amount of time in ms the user needs to press the relevant keys to trigger the
          screenshot chord -->
     <integer name="config_screenshotChordKeyTimeout">0</integer>
@@ -398,5 +399,5 @@
 
     <!-- Exempt ImsService from privacy (location) indicators -->
     <string name="config_systemAudioIntelligence" translatable="false">org.codeaurora.ims</string>
-
+   <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 </resources>
