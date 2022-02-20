@@ -9,9 +9,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-pe \
 
-# Dirac
-$(call inherit-product, vendor/xiaomi/whyred/dirac/dirac.mk)
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
